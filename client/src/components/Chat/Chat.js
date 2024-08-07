@@ -16,12 +16,8 @@ const Chat = () => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [users, setUsers] = useState("");
-<<<<<<< HEAD
   const ENDP =
     "https://talk-space-server-31pwex03a-ankursharma-123s-projects.vercel.app/";
-=======
-  const ENDP = "https://talkspace-1-vgef.onrender.com/";
->>>>>>> cb701efd7d29743ac9feb3917f6f3f9a7869c058
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     console.log(name, room);
