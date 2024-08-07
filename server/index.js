@@ -12,7 +12,7 @@ app.use(cors());
 const server = createServer(app);
 const io = new SocketIOServer(server, {
   cors: {
-    origin: "https://talk-space-nnbjd0r0w-ankursharma-123s-projects.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
